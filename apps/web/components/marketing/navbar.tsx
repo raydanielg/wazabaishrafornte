@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { Menu02Icon } from "@hugeicons/core-free-icons";
+import { Menu02Icon, ArrowRight01Icon } from "@hugeicons/core-free-icons";
 import { Button } from "@workspace/ui/components/button";
 import {
   Sheet,
@@ -77,6 +77,15 @@ export function Navbar({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             {dict.nav.login}
           </Button>
           <Button
+            variant="outline"
+            size="sm"
+            nativeButton={false}
+            render={<a href="tel:+255716212896" />}
+          >
+            {dict.nav.talkToSales}
+            <HugeiconsIcon icon={ArrowRight01Icon} strokeWidth={2} className="size-4" />
+          </Button>
+          <Button
             size="sm"
             nativeButton={false}
             render={<Link href={localizedPath(locale, "/register")} />}
@@ -138,6 +147,16 @@ export function Navbar({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 >
                   {dict.nav.getStarted}
                 </Button>
+                <a
+                  href="tel:+255716212896"
+                  className="mt-2 flex items-center justify-between rounded-md px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-muted"
+                >
+                  <span>{dict.nav.talkToSales}</span>
+                  <span className="flex items-center gap-1 text-foreground">
+                    +255 716 212 896
+                    <HugeiconsIcon icon={ArrowRight01Icon} strokeWidth={2} className="size-4" />
+                  </span>
+                </a>
               </div>
             </SheetContent>
           </Sheet>

@@ -18,6 +18,7 @@ export const en = {
     contact: "Contact",
     login: "Log in",
     getStarted: "Get Started",
+    talkToSales: "Talk to Sales",
     menu: "Menu",
     openMenu: "Open menu",
     closeMenu: "Close menu",

@@ -20,6 +20,7 @@ export const sw: Dictionary = {
     contact: "Wasiliana",
     login: "Ingia",
     getStarted: "Anza Sasa",
+    talkToSales: "Ongea na Mauzo",
     menu: "Menyu",
     openMenu: "Fungua menyu",
     closeMenu: "Funga menyu",
