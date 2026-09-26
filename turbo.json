@@ -1,6 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
+  "globalEnv": ["NEXT_PUBLIC_API_URL", "NEXT_PUBLIC_SITE_URL", "NEXT_PUBLIC_APP_URL", "NEXT_PUBLIC_APP_STORE_URL", "NEXT_PUBLIC_PLAY_STORE_URL", "CONTACT_FORWARD_URL","NODE_ENV","API_INTERNAL_URL","GOOGLE_SITE_VERIFICATION","BING_SITE_VERIFICATION"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],

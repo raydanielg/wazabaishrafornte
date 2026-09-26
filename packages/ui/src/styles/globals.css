@@ -130,3 +130,37 @@
     cursor: pointer;
     }
 }
+/* Landing page polish */
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes wz-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wz-reveal {
+  opacity: 0;
+}
+
+.wz-reveal.wz-visible {
+  animation: wz-reveal 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .wz-reveal,
+  .wz-reveal.wz-visible {
+    opacity: 1;
+    animation: none;
+  }
+}
